@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(360deg,rgb(201, 201, 155),rgb(158, 80, 80),rgb(82, 156, 157))
+}
+.container{
+    width: 500px;
+    border: 1px solid black;
+    transition: all 0.8s ease;
+}
+.container:hover{
+    box-shadow: 5px 5px 5px black;
+}
+.sub_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+label{
+    font-size: 18px;
+    color: white;
+}
+input{
+    width: 300px;
+    outline: none;
+    appearance: none;
+    padding:5px;
+    font-size: 15px;
+    border-radius: 10px;
+
+}
+input:hover{
+    box-shadow: 0 3px 5px rgb(9, 18, 7);
+}
+input::placeholder{
+    opacity: 0.7;
+}
+
+.User_name,.User_email,.User_password,.Confirm_password,.User_type {
+    margin-bottom: 10px;
+}
+#User_type{
+    padding:5px;
+}
+.register_ctn span{
+    color:red;
+    margin-left: 10px;
+}
+.register_ctn button{
+    padding:5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.register_ctn button:hover{
+    background-color: rgb(88, 88, 64);
+    color: white;
+
+}
+.alert_message{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.alert{
+    width: 50%;
+    padding: 5px;
+    font-size: 20px;
+    color: red;
+    border: 1px solid black;
+}
+.alert_message .close_btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
