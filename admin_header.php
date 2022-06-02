@@ -12,7 +12,7 @@
             <p class="profile">Profile</p>
         </div>
     </div>
-    <div class="profile_info">
+    <div class="profile_info test">
         <p>Admin Name : <span><?php echo $_SESSION['admin_name'] ?></span></p>
         <p>Admin Email : <span><?php echo $_SESSION['admin_email'] ?></span></p>
     </div>
